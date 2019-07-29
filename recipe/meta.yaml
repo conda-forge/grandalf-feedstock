@@ -37,7 +37,7 @@ about:
 
   # The remaining entries in this section are optional, but recommended.
   description: |
-    Grandalf is a python package made for experimentations with graphs and drawing
+    Grandalf is a Python package made for experimentations with graphs and drawing
     algorithms. It is written in pure python.
   dev_url: https://github.com/bdcht/grandalf
 
