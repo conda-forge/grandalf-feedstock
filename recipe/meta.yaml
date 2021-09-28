@@ -1,5 +1,5 @@
 {% set name = "grandalf" %}
-{% set version = "0.7" %}
+{% set version = "0.55555" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/bdcht/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: b3112299fe0a9123c088a16bf2f1b541d0d91199b77170a9739b569bd16a828e
+  sha256: 00ce44051a9bcd228978a5132fb1fd13d24f1ea561ba7590bf797c8fa7ed2c33
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install --no-deps . -vv"
+  script: {{ PYTHON }} -m pip install --no-deps . -vv
 
 requirements:
   host:
@@ -32,7 +32,7 @@ about:
   home: https://github.com/bdcht/grandalf
   license: GPL-2.0 OR EPL-1.0
   license_file: LICENSE
-  summary: 'Graph and drawing algorithms framework'
+  summary: Graph and drawing algorithms framework
 
   # The remaining entries in this section are optional, but recommended.
   description: |
