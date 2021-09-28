@@ -1,13 +1,13 @@
 {% set name = "grandalf" %}
-{% set version = "0.6" %}
+{% set version = "0.7" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7471db231bd7338bc0035b16edf0dc0c900c82d23060f4b4d0c4304caedda6e4
+  url: https://github.com/bdcht/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: b3112299fe0a9123c088a16bf2f1b541d0d91199b77170a9739b569bd16a828e
 
 build:
   noarch: python
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - pytest-runner
   run:
-    - python
+    - python >=3.6
     - pyparsing
     - future
 
@@ -30,8 +30,7 @@ test:
 
 about:
   home: https://github.com/bdcht/grandalf
-  license: GPL-2.0 | EPL-1.0
-  license_family: GPL
+  license: GPL-2.0 OR EPL-1.0
   license_file: LICENSE
   summary: 'Graph and drawing algorithms framework'
 
@@ -45,4 +44,3 @@ extra:
   recipe-maintainers:
     - shcheklein
     - efiop
-    - MaxRis
