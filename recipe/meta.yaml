@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - pytest-runner
   run:
-    - python
+    - python >=3.6
     - pyparsing
     - future
 
@@ -30,8 +30,7 @@ test:
 
 about:
   home: https://github.com/bdcht/grandalf
-  license: GPL-2.0 | EPL-1.0
-  license_family: GPL
+  license: GPL-2.0 OR EPL-1.0
   license_file: LICENSE
   summary: 'Graph and drawing algorithms framework'
 
@@ -45,4 +44,3 @@ extra:
   recipe-maintainers:
     - shcheklein
     - efiop
-    - MaxRis
