@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0ba234b8962420a093af39de82e89b22e9152d54b05d2fa30953ce39fa52aea3
+  url: https://github.com/bdcht/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: b3112299fe0a9123c088a16bf2f1b541d0d91199b77170a9739b569bd16a828e
 
 build:
   noarch: python
