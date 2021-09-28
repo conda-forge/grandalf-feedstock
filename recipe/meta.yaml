@@ -1,5 +1,5 @@
 {% set name = "grandalf" %}
-{% set version = "0.6" %}
+{% set version = "0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7471db231bd7338bc0035b16edf0dc0c900c82d23060f4b4d0c4304caedda6e4
+  sha256: 0ba234b8962420a093af39de82e89b22e9152d54b05d2fa30953ce39fa52aea3
 
 build:
   noarch: python
