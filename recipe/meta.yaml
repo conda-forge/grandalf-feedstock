@@ -1,5 +1,5 @@
 {% set name = "grandalf" %}
-{% set version = "0.7" %}
+{% set version = "0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/bdcht/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: b3112299fe0a9123c088a16bf2f1b541d0d91199b77170a9739b569bd16a828e
+  sha256: 82d80072e5a1928bc46d94a54d2d92a38f73da0af052efc84ce34b5f4601dfa2
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install --no-deps . -vv"
 
 requirements:
